@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* by default value will be none  */
+
+}
+html{
+    scroll-behavior: smooth;  
+    /* for smooth scrolling  */
+}
+.logo{
+    width:20%;
+    /* height: 10%; */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 45%;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+.navbar{
+    display: flex;  /* It written all thing in row wise  or you can set as per the choice  */
+    align-items: center;
+    justify-content: center;
+    position:sticky;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list{
+    width: 70%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* it make horizontally centre */
+    /*  */
+}
+.nav-list li{
+    list-style: none; 
+    padding: 26px 30px;
+    font-size: 18px;
+
+    /* buttet will be removed by usung list style none  */
+    
+
+}
+.nav-list li a{
+    text-decoration: none ; /*underline will be removed */
+    color: white;
+
+}
+.nav-list li a:hover{
+    color: aqua;
+}
+.rightnav{
+    width: 30%;
+    /* background-color: blue; */
+    text-align: right;
+    padding: 0 20px;  
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid black;
+    border-radius: 5px;
+    /* margin-top: 15px; */
+}
+.background{
+    background: rgba(0,0,0,0.7) url("/Task1/image.jpg")    ;
+    visibility: visible;
+    z-index: 0.2;
+    /* opacity:1; */
+    background-blend-mode: darken; /* image will be dark  */
+     
+    
+}
+.firstsection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* font-size: 20px; */
+    color: white;
+    height: 70%;
+
+
+}
+.firsthalf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* it will decide the arrangement of an text  */
+    width: 80%;
+
+
+}
+.secondhalf{
+    /* align-items: center; */
+    width: 30%;
+    
+
+
+}
+.firstpara{
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.secondpara{
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.secondhalf img {
+    width: 65%;
+    padding: 3px;
+    margin: 4px;
+    border: 3px solid;
+
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+.button{
+   padding: 8px;
+   
+
+}
+.btn{
+    border: 2px solid white;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: none ;
+    color: white;
+    margin: 7px 3px;
+}
+.btn:hover{
+    color: orangered;
+}
+.secright{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* height: 300px; */
+    max-width: 80%;
+    margin-top: 10px;
+}
+.paras{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+.sectiontag{
+    padding: 0px 10px;
+}
+.sectionsubtag{
+    padding: 0px 10px;
+    text-align: center;
+}
+.sectionleft{
+    flex-direction: row-reverse;
+}
+.thumbnail img{
+    border: px solid gold;
+    border-radius: 22px;
+    opacity: 2;
+}
+.contact{
+    background-color: rgb(241, 241, 231);
+    /* height: 833px; */
+    
+}
+.text{
+    text-align: center;
+    align-items: center;
+   padding-top: 20px;
+    margin: 40px opx;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.form{
+    
+    max-width: 600px;
+    margin: auto;
+}
+.form input{
+    margin: 10px 0px;
+    padding: 4px 3px ;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 8px;
+}
+/* #name{
+    text-align: center;
+} */
+.from-input{
+    width: 100%; 
+    
+    border: 2px solid gray;
+    margin: 14px 0px;
+    border-radius:  6px ;
+    padding: 5px 3px ;  
+    font-size: 17px;
+    
+}
+.btn-button{
+    
+    padding: 5px ;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn-button:hover{
+    color: cadetblue;
+   
+    /* background-color: rgb(184, 97, 97); */
+}
+
+.copy-right{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+   opacity: 0.5;
+   color: white;
+    
+}
+
+.burger{
+    display: none;
+    position:absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+
+}
+.line{
+    
+    width: 33px;
+    background-color: white;
+    padding: 4px;
+    margin: 5px 3px ;
+}
+footer{
+    margin-top: 50px;
+}
+@media only screen and (max-width:1040px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 450px;
+        transition: all 0.7s ease-out;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column;
+    }
+    .sectionleft{
+        flex-direction: column-reverse;
+    }
+    .secright{
+        flex-direction: column-reverse;
+    }
+    .paras{
+        padding: 0;
+    }
+}
